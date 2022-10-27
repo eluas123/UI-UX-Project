@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ddd;
+}
+
+header .container {
+    height: 150px;
+    width: 100%;
+    padding: 0 16px;
+    background: rgb(36, 40, 45);
+    background: linear-gradient(234deg, rgba(36, 40, 45, 1) 0%, rgba(102, 208, 39, 0) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 13px -7px black, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.container {
+    max-width: 100%;
+}
+
+header .logos {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-weight: 900;
+    text-align: left;
+    align-items: center;
+}
+
+header .logos img {
+    height: 100%;
+}
+
+header .logos p {
+    cursor: pointer;
+}
+
+header nav a {
+    text-decoration: none;
+    color: silver;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    transition: 1000ms;
+    padding: 0 16px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+header nav a:hover {
+    transform: scale(1.3, 1.3);
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+nav .openMenu {
+    color: white;
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    color: white;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-youtube:hover {
+    color: rgb(255, 123, 0);
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 957px) {
+    footer {
+        width: 100%;
+        position: absolute;
+        top: 1000%!important;
+    }
+}
+
+@media(max-width: 768px) {
+    .slide {
+        display: none;
+    }
+    .container-fluid55 {
+        min-height: 500px;
+        background-image: url(project_image/arsenal_stadium.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    footer {
+        width: 100%;
+        position: absolute;
+        top: 950%!important;
+    }
+    header nav a {
+        color: white;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+.containerTitle {
+    min-height: 100vh;
+    background: #000;
+    text-align: center;
+    width: 100%!important;
+}
+
+.containerTitle span {
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: black;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2 {
+    font-size: 40px;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+.EliasAreta {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.pencil {
+    background: white;
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.slide {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.slide .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.join {
+    min-height: 550px;
+    background-image: url(project_image/pic1.jpg);
+    background-size: cover;
+    background-position: center top;
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+article .container_article {
+    min-width: 100%;
+    min-height: 300px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.join h2 {
+    font-weight: bold;
+}
+
+.UEFA {
+    margin: 0;
+    color: #0E1E5B;
+    font-size: 150px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+main {
+    min-height: 600px;
+}
+
+main .box {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .container3 {
+    background: rgb(36, 40, 45);
+    background: linear-gradient(234deg, rgba(36, 40, 45, 1) 0%, rgba(102, 208, 39, 0) 100%);
+    min-width: 100%;
+    min-height: 150px;
+}
+
+footer a {
+    padding: 0 16px;
+}
+
+strong {
+    color: black;
+}
+
+footer nav a {
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
